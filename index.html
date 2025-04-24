@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Container Principal -->
+	<div class="container">
+		<!-- Container Secundário -->
+		<div class="container-secundario">
+			<!-- Player Health -->
+			<div class="principal principal-player">
+				<div class="player-hp" id="playerHealth"></div>
+				<div class="auxiliar"></div>
+			</div>
+			<!-- Tempo -->
+			<div class="tempo" id="timer">
+				10
+			</div>
+			<!-- Enemy Health -->
+			<div class="principal principal-enemy">
+				<div class="enemy-hp" id="enemyHealth"></div>
+				<div class="auxiliar"></div>
+			</div>
+
+			<div></div>
+		</div>
+		<div class="alert" id="displayText">Tie</div>
+		<canvas></canvas>
+	</div>
+	
+	<script 
+	src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/classes.js"></script>
+	<script type="text/javascript" src="js/index.js"></script> 
+</body>
+</html>
